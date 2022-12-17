@@ -67,7 +67,7 @@ class MainWindow(QMainWindow):
         return qproperty
     
 # ________________DEFINING MainWindow EVENTS_____________________#    
-
+    #this action is not able to launch dblclick event specifically in the header, it works to any place where the event has been launch
     def mousePressEvent(self, event):
         self.oldposition = event.globalPos()
         #---Launch event at double clicked---
@@ -81,7 +81,8 @@ class MainWindow(QMainWindow):
         delta = QPoint(event.globalPos() - self.oldposition)
         self.move(self.x() + delta.x(), self.y() + delta.y())
         self.oldposition = event.globalPos()
-
+    
+    
     def expand_mainwindow_actions(self):
         if self.windowState() == Qt.WindowFullScreen:
             self.showNormal()

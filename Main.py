@@ -15,7 +15,6 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow,
                              QGraphicsObject, QSizeGrip, QSlider, QFrame)
 from animations_sbu import Animations
 
-
 # _____GETTING THE DIRECTORY WHERE WE STORE THE UI FILE______#
 directory = PureWindowsPath(os.path.dirname(__file__) + "\Sistema_Empresa.ui")
 file_directory = Path(directory)
@@ -41,18 +40,13 @@ class MainWindow(QMainWindow):
                                                    b'maximumWidth')
         self.animationLftMenu.setDuration(400)
         self.animationLftMenu.setEasingCurve(QEasingCurve.InQuad)
-
-        #-------Setting hiden the objects of the main window at the  begin-----#
-        self.rightMenu.hide()
-        self.stackedWidget_2.hide()
-
+        
         # ------Defining connections of the widgets within UI APP-----#
         self.salirBtn.clicked.connect(self.close)
         self.minimizarBtn.clicked.connect(self.showMinimized)
         self.expandirBtn.clicked.connect(self.expand_mainwindow_actions)
         self.miempresaBtn.clicked.connect(self.on_clicked)
-        
-        
+
 # _____CREATING THE CONNECTIONS TO THE EXTERNAL MODULES______#
 
     def on_clicked(self):
@@ -65,9 +59,11 @@ class MainWindow(QMainWindow):
         qproperty.setDuration(600)
         qproperty.setEasingCurve(QEasingCurve.InQuad)
         return qproperty
-    
-# ________________DEFINING MainWindow EVENTS_____________________#    
-    #this action is not able to launch dblclick event specifically in the header, it works to any place where the event has been launch
+
+# ________________DEFINING MainWindow EVENTS_____________________#
+
+#this action is not able to launch dblclick event specifically in the header, it works to any place where the event has been launch
+
     def mousePressEvent(self, event):
         self.oldposition = event.globalPos()
         #---Launch event at double clicked---
@@ -81,8 +77,7 @@ class MainWindow(QMainWindow):
         delta = QPoint(event.globalPos() - self.oldposition)
         self.move(self.x() + delta.x(), self.y() + delta.y())
         self.oldposition = event.globalPos()
-    
-    
+
     def expand_mainwindow_actions(self):
         if self.windowState() == Qt.WindowFullScreen:
             self.showNormal()
@@ -93,7 +88,6 @@ class MainWindow(QMainWindow):
             self.showFullScreen()
             self.expandirBtn.setIcon(
                 QtGui.QIcon(":/newPrefix/ICONS/multiple-file.png"))
-        
 
 
 # _____________________________________________________#

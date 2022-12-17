@@ -1,0 +1,4335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1241</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+
+border:none;
+background-color:transparent;
+background:transparent;
+padding:0;
+margin:0;
+color: rgb(150, 150, 150);
+
+}
+#MainWindow{
+border-top-left-radius:100px;
+border-bottom-left-radius:100px;
+border-top-right-radius:100px;
+border-bottom-right-radius:100px;
+}
+
+#mainBodyContent, #tabWidget {
+background-color:rgb(30,35,40);
+
+}
+#header{
+background-color: rgb(21,21, 31);
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+}
+
+
+#mainBody{
+background-color: rgb(15,15, 25);
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+}
+
+#mainBodyContent, #leftMenu, #rightMenu{
+border-top-left-radius:15px;
+border-bottom-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+}
+
+
+
+QLineEdit:focus{
+border-bottom: 1px solid rgb(44, 115, 109);
+border-left: 1px solid rgb(44, 115, 109);
+border-right: 1px solid rgb(44, 115, 109);
+border-top: 1px solid rgb(44, 115, 109);
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+
+}
+QLineEdit,QComboBox{
+    border-bottom: 1px solid rgb(44, 115, 109);
+	font:11pt &quot;Calibri&quot;;
+	color: rgb(140, 140, 140);
+	
+}
+
+QPushButton{
+
+text-align:center;
+padding: 5px 5px;
+
+}
+
+#miempresaBtn:hover
+{
+background-color:rgb(30,34,40);
+border-top-left-radius:15px;
+}
+
+#salirBtn:hover{
+background-color: rgb(221, 0, 0);
+border-top-right-radius:15px;
+}
+
+#minimizarBtn:hover, #expandirBtn:hover
+{
+background-color:rgb(30,34,40);
+}
+
+#proyectosBtn,#trabajadoresBtn, #facturasBtn,
+#previsionalesBtn,#remuneracionesBtn{
+
+    text-align:left;
+}
+
+#proyectosBtn:hover,#trabajadoresBtn:hover, #facturasBtn:hover,
+#previsionalesBtn:hover,#remuneracionesBtn:hover{
+
+    color:rgb(255,255,255);
+	font: 13pt &quot;Calibri&quot;;
+}
+
+#proyectosBtn:focus,#trabajadoresBtn:focus, #facturasBtn:focus,
+#previsionalesBtn:focus,#remuneracionesBtn:focus{
+border-left: 2px solid rgb(0, 171, 179);
+border-bottom: 2px solid rgb(0, 171, 179);
+border-top: 2px solid rgb(0, 171, 179);
+background-color:rgb(30,35,40);
+border-top-left-radius:15px;
+border-bottom-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+}
+
+#insertar_proyBtn:hover, #buscar_proyBtn:hover, #modificar_proyBtn:hover,#eliminar_proyBtn:hover,
+#insertar_trabBtn:hover,#buscar_trabBtn:hover,#modificar_trabBtn:hover,#eliminar_trabBtn:hover,
+#insertar_factBtn:hover,#buscar_factBtn:hover,#modificar_factBtn:hover,#eliminar_factBtn:hover,
+#insertar_afpBtn:hover,#insertar_asignacionBtn:hover,#insertar_cesantiaBtn:hover,#modificar_afpBtn:hover,
+#modificar_asignacionBtn:hover,#modificar_cesantiaBtn:hover
+{
+border-left: 2px solid rgb(0, 171, 179);
+border-bottom: 2px solid rgb(0, 171, 179);
+border-top: 2px solid rgb(0, 171, 179);
+border-right: 2px solid rgb(0, 171, 179);
+color:rgb(255,255,255);
+border-top-left-radius:15px;
+border-bottom-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+background-color:rgb(0, 20, 25);
+
+}
+
+QTableWidget{
+	gridline-color:rgb(135, 135, 135) ;
+	background-color:rgb(30,35,40);
+	font-size: 10pt rgb(255, 255, 255) ;
+	border:1px solid rgb(135, 135, 135);
+
+}
+
+QTableWidget::item {
+color: rgb(255, 255, 255)
+}
+
+QHeaderView::section{
+	background-color:rgb(40,45,50);
+	font:10pt bold &quot;Arial&quot; ;
+	color: rgb(175, 175, 175);
+	
+}
+
+QTableCornerButton::section {
+ background-color:rgb(30,35,40) 
+}
+
+Line{
+background-color:rgb(35, 35, 35) 
+
+}
+
+/* STYLE FOR COMBOBOX */
+QComboBox::drop-down{
+border:0px;
+color: rgb(140, 140, 140);
+}
+
+QComboBox::down-arrow{
+border-image: url(:/newPrefix/ICONS/angle-down.png);
+width:13px;
+height:13px;
+margin-right:10px;
+
+
+}
+
+QCombobox:on{
+border: 1px solid rgb(44, 115, 109);
+border-left-radius:10px;
+border-right-radius:10px;
+
+
+}
+
+QComboBox QListView{
+font-size: 13px;
+border: 1px solid rgb(44, 115, 109);
+padding:5px;
+background-color:rgb(30,35,40);
+outline:0px;
+
+
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="header" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="miempresaBtn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Source.qrc">
+              <normaloff>:/newPrefix/ICONS/menu-hamburguesa.png</normaloff>:/newPrefix/ICONS/menu-hamburguesa.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Franklin Gothic Demi</family>
+              <pointsize>13</pointsize>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Mi Empresa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>968</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="minimizarBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Source.qrc">
+              <normaloff>:/newPrefix/ICONS/minimizar-signo.png</normaloff>:/newPrefix/ICONS/minimizar-signo.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="expandirBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Source.qrc">
+              <normaloff>:/newPrefix/ICONS/square.png</normaloff>:/newPrefix/ICONS/square.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="salirBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Source.qrc">
+              <normaloff>:/newPrefix/ICONS/cancel (1).png</normaloff>:/newPrefix/ICONS/cancel (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>22</width>
+              <height>22</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="mainBody" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="leftMenu" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>0</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widgetLft" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>8</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frameBD">
+               <property name="minimumSize">
+                <size>
+                 <width>170</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777207</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <property name="spacing">
+                 <number>8</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Franklin Gothic Demi</family>
+                    <pointsize>13</pointsize>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Bases de Datos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="proyectosBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>195</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Proyectos</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Source.qrc">
+                    <normaloff>:/newPrefix/ICONS/snowplow.png</normaloff>:/newPrefix/ICONS/snowplow.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="trabajadoresBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>195</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Trabajadores</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Source.qrc">
+                    <normaloff>:/newPrefix/ICONS/agregar-usuario (1).png</normaloff>:/newPrefix/ICONS/agregar-usuario (1).png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="facturasBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>195</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Facturas</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Source.qrc">
+                    <normaloff>:/newPrefix/ICONS/file-invoice-dollar.png</normaloff>:/newPrefix/ICONS/file-invoice-dollar.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="previsionalesBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>195</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Previsionales</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Source.qrc">
+                    <normaloff>:/newPrefix/ICONS/sack-dollar.png</normaloff>:/newPrefix/ICONS/sack-dollar.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Minimum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QFrame" name="frameAplicaciones">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <property name="spacing">
+                 <number>8</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Franklin Gothic Demi</family>
+                    <pointsize>13</pointsize>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:13pt;&quot;&gt;Aplicaciones&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="remuneracionesBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>195</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="text">
+                   <string>Remuneraciones</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Source.qrc">
+                    <normaloff>:/newPrefix/ICONS/dolar.png</normaloff>:/newPrefix/ICONS/dolar.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>1600</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QFrame" name="frameLogoSBU">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>130</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="Source.qrc">:/newPrefix/ICONS/SBU-LOGO.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="mainBodyContent" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>1000</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget_2">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="pageDBproyectos">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QTableWidget" name="proyectosTbl">
+                <property name="styleSheet">
+                 <string notr="true">/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal{
+	border:none;
+	background-color:rgb(40,45,50);
+	height:11px;
+	margin: 0px 19px 0px 19px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR HORIZONTAL  */
+ QScrollBar::handle:horizontal{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	height:1px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*LEFT BTN - SCROLLBAR */
+ QScrollBar::sub-line:horizontal{
+	border:none;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-left (1).png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:left;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:horizontal:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*RIGHT BTN - SCROLLBAR */
+ QScrollBar::add-line:horizontal{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:right;
+	subcontrol-origin:margin;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-right.png);
+
+}
+ QScrollBar::add-line:horizontal:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal{
+	background:none;
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+
+</string>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NOMBRE_PROYECTO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MANDANTE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>RUT_MANDANTE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NOMBRE_CONTACTO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TELEFONO_CONTACTO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CODIGO_OC</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NETO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>IVA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TOTAL_OC</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pageDBtrabajadores">
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <widget class="QTableWidget" name="trabajadoresTbl">
+                <property name="styleSheet">
+                 <string notr="true">/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal{
+	border:none;
+	background-color:rgb(40,45,50);
+	height:11px;
+	margin: 0px 19px 0px 19px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR HORIZONTAL  */
+ QScrollBar::handle:horizontal{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	height:1px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*LEFT BTN - SCROLLBAR */
+ QScrollBar::sub-line:horizontal{
+	border:none;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-left (1).png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:left;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:horizontal:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*RIGHT BTN - SCROLLBAR */
+ QScrollBar::add-line:horizontal{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:right;
+	subcontrol-origin:margin;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-right.png);
+
+}
+ QScrollBar::add-line:horizontal:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal{
+	background:none;
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+
+</string>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>APELLIDOS</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NOMBRES</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FECHA_NACIMIENTO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>EDAD</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>DIRECCION</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TIPO_CONTRATO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CARGO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NOMBRE_OBRA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>SUELDO_BASE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MONTO_COLACION</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MONTO_MOVILIZACION</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>ASIGNACION_FAMILIAR</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>AFP</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>PREVISION _SALUD</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FECHA_CONTRATO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FECHA_DESVINCULO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>BANCO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>N_CUENTA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TIPO_CUENTA_BANCARIA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CORREO</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pageDBfacturas">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QTableWidget" name="facturasTbl">
+                <property name="styleSheet">
+                 <string notr="true">/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal{
+	border:none;
+	background-color:rgb(40,45,50);
+	height:11px;
+	margin: 0px 19px 0px 19px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR HORIZONTAL  */
+ QScrollBar::handle:horizontal{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	height:1px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*LEFT BTN - SCROLLBAR */
+ QScrollBar::sub-line:horizontal{
+	border:none;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-left (1).png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:left;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:horizontal:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*RIGHT BTN - SCROLLBAR */
+ QScrollBar::add-line:horizontal{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:right;
+	subcontrol-origin:margin;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-right.png);
+
+}
+ QScrollBar::add-line:horizontal:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal{
+	background:none;
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+
+</string>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="rowCount">
+                 <number>0</number>
+                </property>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FOLIO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TIPO_FACTURA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>ID_PROYECTO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NETO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>IVA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TOTAL</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pageDBprevisionales">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Franklin Gothic Demi</family>
+                  <pointsize>11</pointsize>
+                  <weight>75</weight>
+                  <italic>true</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Base de Datos AFP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="afpTbl">
+                <property name="styleSheet">
+                 <string notr="true">/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal{
+	border:none;
+	background-color:rgb(40,45,50);
+	height:11px;
+	margin: 0px 19px 0px 19px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR HORIZONTAL  */
+ QScrollBar::handle:horizontal{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	height:1px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*LEFT BTN - SCROLLBAR */
+ QScrollBar::sub-line:horizontal{
+	border:none;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-left (1).png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:left;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:horizontal:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*RIGHT BTN - SCROLLBAR */
+ QScrollBar::add-line:horizontal{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:right;
+	subcontrol-origin:margin;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-right.png);
+
+}
+ QScrollBar::add-line:horizontal:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal{
+	background:none;
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+
+</string>
+                </property>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>AFP</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TASA_INDEPENDIENTE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>TASA_DEPENDIENTE</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>SIS</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Franklin Gothic Demi</family>
+                  <pointsize>11</pointsize>
+                  <weight>75</weight>
+                  <italic>true</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Base de Datos Asignación Familiar&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="asignacionTbl">
+                <property name="styleSheet">
+                 <string notr="true">/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal{
+	border:none;
+	background-color:rgb(40,45,50);
+	height:11px;
+	margin: 0px 19px 0px 19px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR HORIZONTAL  */
+ QScrollBar::handle:horizontal{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	height:1px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*LEFT BTN - SCROLLBAR */
+ QScrollBar::sub-line:horizontal{
+	border:none;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-left (1).png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:left;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:horizontal:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*RIGHT BTN - SCROLLBAR */
+ QScrollBar::add-line:horizontal{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:right;
+	subcontrol-origin:margin;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-right.png);
+
+}
+ QScrollBar::add-line:horizontal:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal{
+	background:none;
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+
+</string>
+                </property>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderCascadingSectionResizes">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>TRAMO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>MONTO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>REQUISITO_RENTA</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Franklin Gothic Demi</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <italic>true</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#8f8f8f;&quot;&gt;Bases de Datos Seguro de Cesantía&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="cesantiaTbl">
+                <property name="styleSheet">
+                 <string notr="true">/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal{
+	border:none;
+	background-color:rgb(40,45,50);
+	height:11px;
+	margin: 0px 19px 0px 19px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR HORIZONTAL  */
+ QScrollBar::handle:horizontal{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	height:1px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*LEFT BTN - SCROLLBAR */
+ QScrollBar::sub-line:horizontal{
+	border:none;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-left (1).png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:left;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:horizontal:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*RIGHT BTN - SCROLLBAR */
+ QScrollBar::add-line:horizontal{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:right;
+	subcontrol-origin:margin;
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-right.png);
+
+}
+ QScrollBar::add-line:horizontal:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal{
+	background:none;
+}
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+
+</string>
+                </property>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>TIPO_CONTRATO</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FINANCIAMIENTO_EMPLEADOR</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>FINANCIAMIENTO_TRABAJADOR</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="rightMenu" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>350</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label_5">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="Source.qrc">:/newPrefix/ICONS/edit.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>15</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="minimumSize">
+             <size>
+              <width>283</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="editProyectos">
+             <layout class="QVBoxLayout" name="verticalLayout_13" stretch="0">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>11</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>11</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>350</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>341</width>
+                   <height>555</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <property name="leftMargin">
+                   <number>7</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>135</number>
+                  </property>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Nombre del Proyecto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineMandante">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Mandante</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineRutMandante">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Rut mandante</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineContactoProyecto">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Nombre contacto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineTelContactoProyecto">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Telefono contacto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineCodigoOC">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Codigo OC</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="linenNeto">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Neto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineIVA">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>IVA</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="linetTotalOC">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Total OC</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QFrame" name="frame_7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>325</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>400</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_6">
+                     <property name="spacing">
+                      <number>10</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="insertar_proyBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Crear Proyecto</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/layer-plus.png</normaloff>:/newPrefix/ICONS/layer-plus.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>20</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="modificar_proyBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>140</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Modificar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/actualizar-flecha.png</normaloff>:/newPrefix/ICONS/actualizar-flecha.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>20</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineIdProyecto">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>ID</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="eliminar_proyBtn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>170</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar proyecto</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Source.qrc">
+                      <normaloff>:/newPrefix/ICONS/eliminar.png</normaloff>:/newPrefix/ICONS/eliminar.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEliminarRutMandante">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Rut mandante</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="buscar_proyBtn">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>160</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                     <string>Buscar proyecto</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Source.qrc">
+                      <normaloff>:/newPrefix/ICONS/Buscar.png</normaloff>:/newPrefix/ICONS/Buscar.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="editTrabajadores">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14" stretch="0">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="sizeConstraint">
+               <enum>QLayout::SetDefaultConstraint</enum>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>11</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>11</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="scrollArea_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+</string>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>334</width>
+                   <height>1105</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_24">
+                  <property name="spacing">
+                   <number>20</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>7</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>6</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>11</number>
+                  </property>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_2">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Apellidos</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_3">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Nombres</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_4">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Fecha Nacimiento</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_5">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Edad</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_6">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Dirección</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox">
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="currentText">
+                     <string>Tipo de Contrato</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Tipo de Contrato</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_8">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Cargo</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_9">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Sueldo Base</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_10">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Monto Colación</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_11">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Monto Movilización</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_12">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Asignación Familiar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_2">
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="currentText">
+                     <string>AFP</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>AFP</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_3">
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="currentText">
+                     <string>Previsión de salud</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Previsión de salud</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_13">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Fecha contrato</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_14">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Fecha desvinculo</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_4">
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="currentText">
+                     <string>Banco</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Banco</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_5">
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="currentText">
+                     <string>Tipo Cuenta</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Tipo Cuenta</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_15">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Numero cuenta</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineProyecto_16">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Correo</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QFrame" name="frame_9">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_20">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="modificar_trabBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>190</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="toolTip">
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       </property>
+                       <property name="text">
+                        <string>Modificar trabajador</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/actualizar-flecha.png</normaloff>:/newPrefix/ICONS/actualizar-flecha.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="insertar_trabBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>170</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Añadir trabajador</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/layer-plus.png</normaloff>:/newPrefix/ICONS/layer-plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit">
+                    <property name="placeholderText">
+                     <string>Rut</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="eliminar_trabBtn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>180</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar trabajador</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Source.qrc">
+                      <normaloff>:/newPrefix/ICONS/eliminar.png</normaloff>:/newPrefix/ICONS/eliminar.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_2"/>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="buscar_trabBtn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>170</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                     <string>Buscar trabajador</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Source.qrc">
+                      <normaloff>:/newPrefix/ICONS/Buscar.png</normaloff>:/newPrefix/ICONS/Buscar.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="editFacturas">
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>11</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>11</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="scrollArea_3">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>184</width>
+                   <height>474</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_18">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>155</number>
+                  </property>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_3">
+                    <property name="placeholderText">
+                     <string>Folio</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_6">
+                    <property name="currentText">
+                     <string>Tipo de factura</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Tipo de factura</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_6">
+                    <property name="placeholderText">
+                     <string>ID del proyecto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_4">
+                    <property name="placeholderText">
+                     <string>Monto neto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_5">
+                    <property name="placeholderText">
+                     <string>Monto IVA</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_7">
+                    <property name="placeholderText">
+                     <string>Monto total</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QFrame" name="frame_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_25">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>10</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>10</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="modificar_factBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>170</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Modificar factura</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/actualizar-flecha.png</normaloff>:/newPrefix/ICONS/actualizar-flecha.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="insertar_factBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>155</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Ingresar factura</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/layer-plus.png</normaloff>:/newPrefix/ICONS/layer-plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_8">
+                    <property name="placeholderText">
+                     <string>ID</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="eliminar_factBtn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>155</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar factura</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Source.qrc">
+                      <normaloff>:/newPrefix/ICONS/eliminar.png</normaloff>:/newPrefix/ICONS/eliminar.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_4">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_9">
+                    <property name="placeholderText">
+                     <string>Folio</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="buscar_factBtn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>145</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                     <string>Buscar factura</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Source.qrc">
+                      <normaloff>:/newPrefix/ICONS/Buscar.png</normaloff>:/newPrefix/ICONS/Buscar.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="editPrevisionales">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="scrollArea_4">
+                <property name="styleSheet">
+                 <string notr="true">/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical{
+	border:none;
+	background-color:rgb(40,45,50);
+	width:11px;
+	margin: 19px 0px 19px 0px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+/*   HANDLE BAR VERTICAL  */
+ QScrollBar::handle:vertical{
+	background-color: rgb(102, 116, 130);
+	border-radius:5px;
+	width:1px;
+	
+}
+QScrollBar::handle:vertical:pressed{
+	background-color: rgb(0, 171, 179);
+}
+QScrollBar::handle:vertical:hover{
+	background-color: rgb(0, 171, 179);
+
+}
+/*TOP BUTTON - VERTICAL */
+ QScrollBar::sub-line:vertical{
+	border:none;
+	border-image: url(:/newPrefix/ICONS/angle-small-up.png);
+	background-color:rgb(30,35,40);
+	width:16px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+	
+}
+ QScrollBar::sub-line:vertical:hover{
+	background-color: rgb(108, 110, 125);
+}
+
+/*DOWN BUTTON - SCROLLBAR */
+ QScrollBar::add-line:vertical{
+	border:none;
+	background-color: rgb(30,35,40);
+	width:17px;
+	height:16px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top- right-radius:8px;
+	border-bottom-right-radius:8px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+	
+	
+	border-image: url(:/newPrefix/ICONS/angle-small-down.png);
+
+}
+ QScrollBar::add-line:vertical:hover{
+	background-color:rgb(108, 110, 125);
+}
+
+/*RESET ARROW*/
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
+	background:none;
+}
+</string>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>187</width>
+                   <height>859</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <property name="spacing">
+                   <number>10</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>130</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="label_9">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>AFP</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_7">
+                    <item>
+                     <property name="text">
+                      <string>Nombre AFP</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_10">
+                    <property name="placeholderText">
+                     <string>Tasa independiente</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_11">
+                    <property name="placeholderText">
+                     <string>Tasa dependiente</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_12">
+                    <property name="placeholderText">
+                     <string>SIS</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QFrame" name="frame_10">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_21">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>10</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>10</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="modificar_afpBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>155</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Modificar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/actualizar-flecha.png</normaloff>:/newPrefix/ICONS/actualizar-flecha.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="insertar_afpBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>145</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Insertar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/layer-plus.png</normaloff>:/newPrefix/ICONS/layer-plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_5">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Asignación Familiar</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_13">
+                    <property name="placeholderText">
+                     <string>Tramo</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_14">
+                    <property name="placeholderText">
+                     <string>Monto</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_15">
+                    <property name="placeholderText">
+                     <string>Requisito renta</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QFrame" name="frame_11">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="modificar_asignacionBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>155</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Modificar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/actualizar-flecha.png</normaloff>:/newPrefix/ICONS/actualizar-flecha.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="insertar_asignacionBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>145</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Insertar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/layer-plus.png</normaloff>:/newPrefix/ICONS/layer-plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_6">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>1</height>
+                     </size>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="font">
+                     <font>
+                      <family>Calibri</family>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Seguro de cesantía</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_8">
+                    <item>
+                     <property name="text">
+                      <string>Tipo contrato</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_16">
+                    <property name="placeholderText">
+                     <string>Financiamiento empleador</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_17">
+                    <property name="placeholderText">
+                     <string>Financiamiento trabajador</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QFrame" name="frame_12">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_23">
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="modificar_cesantiaBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>155</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Modificar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/actualizar-flecha.png</normaloff>:/newPrefix/ICONS/actualizar-flecha.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QPushButton" name="insertar_cesantiaBtn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>145</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Calibri</family>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="text">
+                        <string>Insertar datos</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="Source.qrc">
+                         <normaloff>:/newPrefix/ICONS/layer-plus.png</normaloff>:/newPrefix/ICONS/layer-plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

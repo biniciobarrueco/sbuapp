@@ -1,0 +1,771 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>ICONS/multiple-file.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cancel (1).png</file>
+    <file>ICONS/cancel.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cancel (1).png</file>
+    <file>ICONS/cancel.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cancel.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/cancel.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/close (1).png</file>
+    <file>ICONS/close (2).png</file>
+    <file>ICONS/close (3).png</file>
+    <file>ICONS/close (4).png</file>
+    <file>ICONS/close.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/cross-small (1).png</file>
+    <file>ICONS/cross-small (2).png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/close (1).png</file>
+    <file>ICONS/close (2).png</file>
+    <file>ICONS/close (3).png</file>
+    <file>ICONS/close (4).png</file>
+    <file>ICONS/close.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/cross-small (1).png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/close (1).png</file>
+    <file>ICONS/close (2).png</file>
+    <file>ICONS/close (3).png</file>
+    <file>ICONS/close (4).png</file>
+    <file>ICONS/close.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross.png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/close (1).png</file>
+    <file>ICONS/close (2).png</file>
+    <file>ICONS/close.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/close.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus (1).png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/stop.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/compress-alt (1).png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/down-left-and-up-right-to-center.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/multiple-file (1).png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/close.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/users.png</file>
+    <file>ICONS/usuarios.png</file>
+    <file>ICONS/actualizar.png</file>
+    <file>ICONS/actualizar-flecha.png</file>
+    <file>ICONS/agregar.png</file>
+    <file>ICONS/agregar-usuario (1).png</file>
+    <file>ICONS/agregar-usuario.png</file>
+    <file>ICONS/align-justify.png</file>
+    <file>ICONS/angle-down.png</file>
+    <file>ICONS/angle-small-down.png</file>
+    <file>ICONS/angle-small-left (1).png</file>
+    <file>ICONS/angle-small-left.png</file>
+    <file>ICONS/angle-small-right.png</file>
+    <file>ICONS/angle-small-up.png</file>
+    <file>ICONS/angle-up.png</file>
+    <file>ICONS/arrows.png</file>
+    <file>ICONS/arrow-up-right.png</file>
+    <file>ICONS/arrow-up-right-and-arrow-down-left-from-center.png</file>
+    <file>ICONS/basura.png</file>
+    <file>ICONS/Buscar.png</file>
+    <file>ICONS/cerrar-sesion.png</file>
+    <file>ICONS/clip.png</file>
+    <file>ICONS/compress-alt.png</file>
+    <file>ICONS/comprobacion-de-lista.png</file>
+    <file>ICONS/cross-small.png</file>
+    <file>ICONS/dolar.png</file>
+    <file>ICONS/edit.png</file>
+    <file>ICONS/editar (1).png</file>
+    <file>ICONS/editar.png</file>
+    <file>ICONS/eliminar.png</file>
+    <file>ICONS/equipo.png</file>
+    <file>ICONS/estadisticas.png</file>
+    <file>ICONS/exit.png</file>
+    <file>ICONS/expand-arrows-alt.png</file>
+    <file>ICONS/expandir.png</file>
+    <file>ICONS/factura.png</file>
+    <file>ICONS/file-invoice-dollar.png</file>
+    <file>ICONS/flecha-correcta (1).png</file>
+    <file>ICONS/flecha-correcta.png</file>
+    <file>ICONS/flecha-derecha.png</file>
+    <file>ICONS/Flecha-izquierda.png</file>
+    <file>ICONS/hogar (1).png</file>
+    <file>ICONS/inbox-in.png</file>
+    <file>ICONS/Inicio.png</file>
+    <file>ICONS/layer-plus.png</file>
+    <file>ICONS/list.png</file>
+    <file>ICONS/lista-de-opciones.png</file>
+    <file>ICONS/menu-burger.png</file>
+    <file>ICONS/menu-dots-vertical (1).png</file>
+    <file>ICONS/menu-dots-vertical.png</file>
+    <file>ICONS/menu-hamburguesa.png</file>
+    <file>ICONS/minimizar-signo.png</file>
+    <file>ICONS/minus.png</file>
+    <file>ICONS/prevision.png</file>
+    <file>ICONS/proyecto (1).png</file>
+    <file>ICONS/remuneracion.png</file>
+    <file>ICONS/sack-dollar.png</file>
+    <file>ICONS/SBU-LOGO.png</file>
+    <file>ICONS/signal-alt-2.png</file>
+    <file>ICONS/sign-in-alt.png</file>
+    <file>ICONS/sign-out-alt.png</file>
+    <file>ICONS/snowplow.png</file>
+    <file>ICONS/square.png</file>
+    <file>ICONS/usuarios.png</file>
+  </qresource>
+</RCC>

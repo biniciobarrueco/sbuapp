@@ -982,10 +982,22 @@ outline:0px;
           </property>
           <item>
            <widget class="QStackedWidget" name="stackedWidget_2">
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="pageDBproyectos">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_9">
               <item>
                <widget class="QTableWidget" name="proyectosTbl">
@@ -1206,6 +1218,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="pageDBtrabajadores">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_10">
               <item>
                <widget class="QTableWidget" name="trabajadoresTbl">
@@ -1478,6 +1496,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="pageDBfacturas">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_11">
               <item>
                <widget class="QTableWidget" name="facturasTbl">
@@ -1686,6 +1710,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="pageDBprevisionales">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_12">
               <item>
                <widget class="QLabel" name="label_6">
@@ -2388,9 +2418,15 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </size>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="editProyectos">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_13" stretch="0">
               <property name="spacing">
                <number>0</number>
@@ -2444,8 +2480,8 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>341</width>
-                   <height>555</height>
+                   <width>350</width>
+                   <height>747</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_17">
@@ -2870,6 +2906,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="editTrabajadores">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -2997,7 +3039,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>334</width>
+                   <width>203</width>
                    <height>1105</height>
                   </rect>
                  </property>
@@ -3568,6 +3610,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="editFacturas">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_15">
               <property name="spacing">
                <number>0</number>
@@ -3595,7 +3643,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    <x>0</x>
                    <y>0</y>
                    <width>184</width>
-                   <height>474</height>
+                   <height>730</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -3854,6 +3902,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="editPrevisionales">
+             <property name="maximumSize">
+              <size>
+               <width>0</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout_16">
               <property name="spacing">
                <number>0</number>

@@ -31,6 +31,7 @@ border-top-right-radius:100px;
 border-bottom-right-radius:100px;
 }
 
+
 #mainBodyContent, #tabWidget {
 background-color:rgb(30,35,40);
 
@@ -2424,7 +2425,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </size>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="editProyectos">
              <property name="maximumSize">
@@ -2498,7 +2499,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    <number>135</number>
                   </property>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto">
+                   <widget class="QLineEdit" name="LinEdProyecto">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2517,7 +2518,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineMandante">
+                   <widget class="QLineEdit" name="LinEdMandante">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2533,7 +2534,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineRutMandante">
+                   <widget class="QLineEdit" name="LinEdRutMandante">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2549,7 +2550,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineContactoProyecto">
+                   <widget class="QLineEdit" name="LinEdContactoProyecto">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2565,7 +2566,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineTelContactoProyecto">
+                   <widget class="QLineEdit" name="LinEdTelContactoProyecto">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2581,7 +2582,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineCodigoOC">
+                   <widget class="QLineEdit" name="LinEdCodigoOC">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2597,7 +2598,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="linenNeto">
+                   <widget class="QLineEdit" name="LinEdNeto">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2613,7 +2614,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineIVA">
+                   <widget class="QLineEdit" name="LinEdIVA">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2629,7 +2630,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="linetTotalOC">
+                   <widget class="QLineEdit" name="LinEdTotalOC">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2779,7 +2780,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineIdProyecto">
+                   <widget class="QLineEdit" name="LinEdIdProyecto">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2852,7 +2853,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEliminarRutMandante">
+                   <widget class="QLineEdit" name="LinEdEliminarRutMandante">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -2912,6 +2913,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="editTrabajadores">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>0</width>
@@ -3069,7 +3076,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    <number>11</number>
                   </property>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_2">
+                   <widget class="QLineEdit" name="LinEdApellidos">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3088,7 +3095,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_3">
+                   <widget class="QLineEdit" name="LinEdNombres">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3107,7 +3114,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_4">
+                   <widget class="QLineEdit" name="LinEdFechaNacimiento">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3126,7 +3133,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_5">
+                   <widget class="QLineEdit" name="LinEdEdad">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3145,7 +3152,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_6">
+                   <widget class="QLineEdit" name="LinEdRutIngresar">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3159,12 +3166,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                      <string/>
                     </property>
                     <property name="placeholderText">
-                     <string>Dirección</string>
+                     <string>Rut</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox">
+                   <widget class="QComboBox" name="CbBxTipoContrato">
                     <property name="layoutDirection">
                      <enum>Qt::LeftToRight</enum>
                     </property>
@@ -3179,7 +3186,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_8">
+                   <widget class="QLineEdit" name="LinEdCargo">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3198,7 +3205,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_9">
+                   <widget class="QLineEdit" name="LinEdSueldoBase">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3217,7 +3224,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_10">
+                   <widget class="QLineEdit" name="LinEdMontoColacion">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3236,7 +3243,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_11">
+                   <widget class="QLineEdit" name="LinEdMovilizacion">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3255,7 +3262,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_12">
+                   <widget class="QLineEdit" name="LinEdAsignacionFamiliar">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3274,9 +3281,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_2">
+                   <widget class="QComboBox" name="CbBxAfp">
                     <property name="layoutDirection">
                      <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="editable">
+                     <bool>false</bool>
                     </property>
                     <property name="currentText">
                      <string>AFP</string>
@@ -3289,7 +3299,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_3">
+                   <widget class="QComboBox" name="CbBxPrevisionSalud">
                     <property name="layoutDirection">
                      <enum>Qt::LeftToRight</enum>
                     </property>
@@ -3304,7 +3314,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_13">
+                   <widget class="QLineEdit" name="LinEdFechaContrato">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3323,7 +3333,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_14">
+                   <widget class="QLineEdit" name="LinEdFechaDesvinculo">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3342,7 +3352,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_4">
+                   <widget class="QComboBox" name="CbBxBanco">
                     <property name="layoutDirection">
                      <enum>Qt::LeftToRight</enum>
                     </property>
@@ -3357,7 +3367,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_5">
+                   <widget class="QComboBox" name="CbBxTipoCuenta">
                     <property name="layoutDirection">
                      <enum>Qt::LeftToRight</enum>
                     </property>
@@ -3372,7 +3382,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_15">
+                   <widget class="QLineEdit" name="LinEdNumeroCuenta">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3391,7 +3401,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineProyecto_16">
+                   <widget class="QLineEdit" name="LinEdCorreo">
                     <property name="font">
                      <font>
                       <family>Calibri</family>
@@ -3523,7 +3533,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit">
+                   <widget class="QLineEdit" name="LinEdRutEliminar">
                     <property name="placeholderText">
                      <string>Rut</string>
                     </property>
@@ -3575,7 +3585,11 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_2"/>
+                   <widget class="QLineEdit" name="LinEdRutBuscar">
+                    <property name="placeholderText">
+                     <string>Rut</string>
+                    </property>
+                   </widget>
                   </item>
                   <item alignment="Qt::AlignHCenter">
                    <widget class="QPushButton" name="buscar_trabBtn">
@@ -3616,6 +3630,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="editFacturas">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>0</width>
@@ -3649,7 +3669,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    <x>0</x>
                    <y>0</y>
                    <width>184</width>
-                   <height>474</height>
+                   <height>506</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -3669,14 +3689,14 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    <number>155</number>
                   </property>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_3">
+                   <widget class="QLineEdit" name="LinEdFolio">
                     <property name="placeholderText">
                      <string>Folio</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_6">
+                   <widget class="QComboBox" name="CbBxTipoFactura">
                     <property name="currentText">
                      <string>Tipo de factura</string>
                     </property>
@@ -3688,28 +3708,28 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_6">
+                   <widget class="QLineEdit" name="LinEd_IDproyecto">
                     <property name="placeholderText">
                      <string>ID del proyecto</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_4">
+                   <widget class="QLineEdit" name="LinEdMontoNeto">
                     <property name="placeholderText">
                      <string>Monto neto</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_5">
+                   <widget class="QLineEdit" name="LinEdMontoIva">
                     <property name="placeholderText">
                      <string>Monto IVA</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_7">
+                   <widget class="QLineEdit" name="LinEdMontoTotal">
                     <property name="placeholderText">
                      <string>Monto total</string>
                     </property>
@@ -3823,7 +3843,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_8">
+                   <widget class="QLineEdit" name="LinEd_IDFacturaEliminar">
                     <property name="placeholderText">
                      <string>ID</string>
                     </property>
@@ -3869,7 +3889,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_9">
+                   <widget class="QLineEdit" name="LinEdFolioBuscar">
                     <property name="placeholderText">
                      <string>Folio</string>
                     </property>
@@ -3908,6 +3928,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
              </layout>
             </widget>
             <widget class="QWidget" name="editPrevisionales">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>0</width>
@@ -4008,7 +4034,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>187</width>
+                   <width>202</width>
                    <height>859</height>
                   </rect>
                  </property>
@@ -4042,7 +4068,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_7">
+                   <widget class="QComboBox" name="CbBxNombreAFP">
                     <item>
                      <property name="text">
                       <string>Nombre AFP</string>
@@ -4051,21 +4077,21 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_10">
+                   <widget class="QLineEdit" name="LinEdTasaIndependiente">
                     <property name="placeholderText">
                      <string>Tasa independiente</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_11">
+                   <widget class="QLineEdit" name="LinEdTasaDependiente">
                     <property name="placeholderText">
                      <string>Tasa dependiente</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_12">
+                   <widget class="QLineEdit" name="LinEdTasaSIS">
                     <property name="placeholderText">
                      <string>SIS</string>
                     </property>
@@ -4092,11 +4118,11 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                      <property name="bottomMargin">
                       <number>10</number>
                      </property>
-                     <item alignment="Qt::AlignHCenter">
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                       <widget class="QPushButton" name="modificar_afpBtn">
                        <property name="minimumSize">
                         <size>
-                         <width>155</width>
+                         <width>170</width>
                          <height>0</height>
                         </size>
                        </property>
@@ -4108,6 +4134,12 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                        </property>
                        <property name="cursor">
                         <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
+                       <property name="layoutDirection">
+                        <enum>Qt::LeftToRight</enum>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
                        </property>
                        <property name="text">
                         <string>Modificar datos</string>
@@ -4122,7 +4154,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                       <widget class="QPushButton" name="insertar_afpBtn">
                        <property name="minimumSize">
                         <size>
-                         <width>145</width>
+                         <width>160</width>
                          <height>0</height>
                         </size>
                        </property>
@@ -4174,21 +4206,21 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_13">
+                   <widget class="QLineEdit" name="LinEdTramo">
                     <property name="placeholderText">
                      <string>Tramo</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_14">
+                   <widget class="QLineEdit" name="LinEdMontoAsignacionFam">
                     <property name="placeholderText">
                      <string>Monto</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_15">
+                   <widget class="QLineEdit" name="LinEdRequisitoRenta">
                     <property name="placeholderText">
                      <string>Requisito renta</string>
                     </property>
@@ -4207,7 +4239,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                       <widget class="QPushButton" name="modificar_asignacionBtn">
                        <property name="minimumSize">
                         <size>
-                         <width>155</width>
+                         <width>170</width>
                          <height>0</height>
                         </size>
                        </property>
@@ -4233,7 +4265,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                       <widget class="QPushButton" name="insertar_asignacionBtn">
                        <property name="minimumSize">
                         <size>
-                         <width>145</width>
+                         <width>170</width>
                          <height>0</height>
                         </size>
                        </property>
@@ -4285,7 +4317,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="comboBox_8">
+                   <widget class="QComboBox" name="CbBxTipoContrato_2">
                     <item>
                      <property name="text">
                       <string>Tipo contrato</string>
@@ -4294,14 +4326,14 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_16">
+                   <widget class="QLineEdit" name="LinEdFinanciamientoEmpleador">
                     <property name="placeholderText">
                      <string>Financiamiento empleador</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_17">
+                   <widget class="QLineEdit" name="LinEdFinanciamientoTrabajdor">
                     <property name="placeholderText">
                      <string>Financiamiento trabajador</string>
                     </property>
@@ -4320,7 +4352,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                       <widget class="QPushButton" name="modificar_cesantiaBtn">
                        <property name="minimumSize">
                         <size>
-                         <width>155</width>
+                         <width>170</width>
                          <height>0</height>
                         </size>
                        </property>
@@ -4346,7 +4378,7 @@ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical{
                       <widget class="QPushButton" name="insertar_cesantiaBtn">
                        <property name="minimumSize">
                         <size>
-                         <width>145</width>
+                         <width>170</width>
                          <height>0</height>
                         </size>
                        </property>

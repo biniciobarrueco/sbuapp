@@ -34,3 +34,4 @@ class Animations(QMainWindow):
         obj2.setMaximumWidth(mb_width)
         self.stackedWidget_2.setCurrentWidget(obj2)
         self.stackedWidget.setCurrentWidget(obj1)
+

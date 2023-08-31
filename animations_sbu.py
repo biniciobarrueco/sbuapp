@@ -23,7 +23,6 @@ class Animations(QMainWindow):
                 QtGui.QIcon(":/newPrefix/ICONS/menu-hamburguesa.png"))
 
         #set the start and end values for the animation
-
         animation.setStartValue(width)
         animation.setEndValue(new_width)
         animation.start()

@@ -7,9 +7,9 @@ class Queries:
         try:
             self.conn = mysql.connector.connect(
                 host="us-east.connect.psdb.cloud",
-                user="7aguor4a8ibot1wwo04v",
-                password="pscale_pw_WGnRlhCmJkaaLEyK3MgGCQ4Q3a2Ram59EGOHLBedDgs",
-                database="sbu_spa",
+                user="**********",
+                password="*********************************",
+                database="*************",
                 charset="utf8mb4"#replace with the appropiate character set
             )
 
